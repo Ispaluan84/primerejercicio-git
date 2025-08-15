@@ -1,12 +1,29 @@
-# React + Vite
+# 🌤️ WeatherApp Pro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web para consultar el clima en tiempo real usando la API de [WeatherAPI.com](https://www.weatherapi.com/).
 
-Currently, two official plugins are available:
+![preview](./src/assets/preview.png)
+![preview_2](./src/assets/preview_2.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías utilizadas
+- React
+- Vite
+- CSS (estilos personalizados)
+- Axios
+- WeatherAPI
 
-## Expanding the ESLint configuration
+## 🔧 Funcionalidades
+- Búsqueda de clima por ciudad
+- Muestra temperatura, humedad, viento e icono
+- Guarda la última ciudad buscada
+- Diseño responsive y animaciones suaves
+- Manejo de errores
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Instalación local
+```bash
+git clone https://github.com/Ispaluan84/weatherapp-pro.git
+cd weatherapp-pro
+npm install
+npm run dev
+
+

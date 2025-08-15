@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import axios from 'axios';
 import SearchBar from './components/SearchBar';
 import WeatherCard from './components/WeatherCard';
@@ -27,10 +27,17 @@ export default function App() {
     }
   };
 
+  useEffect(() => {
+    const lastCity = localStorage.getItem('lastCity');
+    if(lastCity) {
+      fetchWeather(lastCity);
+    }
+  }, []);  
+
   return (
   
-    <div>
-      <h1>WeatherApp Pro</h1>
+    <div className='app-container'>
+      <h1>🌤 WeatherApp Pro</h1>
       <SearchBar onSearch={fetchWeather} />
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {weatherData && <WeatherCard data={weatherData} />}    

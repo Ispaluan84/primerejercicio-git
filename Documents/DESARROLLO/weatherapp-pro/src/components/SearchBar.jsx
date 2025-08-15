@@ -12,8 +12,10 @@ export default function SearchBar ({ onSearch}) {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} aria-label='Formulario de búsqueda'>
+            <label htmlFor='cityInput' className='visually-hidden'>Ciudad</label>
             <input 
+                id='cityInput'
                 type='text'
                 placeholder='Buscar Ciudad...'
                 value={city}
