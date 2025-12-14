@@ -1,0 +1,65 @@
+{
+  "routes": [
+    { "handle": "filesystem" },
+    {
+      "src": "/planificador-artes-general.html",
+      "dest": "/api/check-access.js"
+    },
+    {
+      "src": "/planificador-musica-general.html",
+      "dest": "/api/check-access.js"
+    },
+    {
+      "src": "/planificador-ciencias-ciclo-basica.html",
+      "dest": "/api/check-access.js"
+    },
+    {
+      "src": "/planificador-ciencias-ciclo-media.html",
+      "dest": "/api/check-access.js"
+    },
+    {
+      "src": "/planificador-historia-ciclo-basica.html",
+      "dest": "/api/check-access.js"
+    },
+    {
+      "src": "/planificador-historia-ciclo-media.html",
+      "dest": "/api/check-access.js"
+    },
+    {
+      "src": "/planificador-ingles-ciclo-basica.html",
+      "dest": "/api/check-access.js"
+    },
+    {
+      "src": "/planificador-ingles-ciclo-media.html",
+      "dest": "/api/check-access.js"
+    },
+    {
+      "src": "/planificador-lengua-ciclo-basica.html",
+      "dest": "/api/check-access.js"
+    },
+    {
+      "src": "/planificador-lengua-ciclo-media.html",
+      "dest": "/api/check-access.js"
+    },
+    {
+      "src": "/planificador-mate-ciclo-basica.html",
+      "dest": "/api/check-access.js"
+    },
+    {
+      "src": "/planificador-mate-ciclo-media.html",
+      "dest": "/api/check-access.js"
+    },
+    {
+      "src": "/planificador-ed-fisica-ciclo-basia.html",
+      "dest": "/api/check-access.js"
+    },
+    {
+      "src": "/planificador-ed-fisica-ciclo-media.html",
+      "dest": "/api/check-access.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
